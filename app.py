@@ -447,7 +447,7 @@ def main():
             st.markdown("---")
 
             # Manual Dropdown for Invoice Number Suffix (01..200)
-            number_options = [str(i).zfill(2) for i in range(1, 201)]
+            number_options = [str(i).zfill(2) for i in range(1, 501)]
             selected_invoice_suffix = st.selectbox(
                 f"Select Invoice Number Suffix (TH-MD-{datetime.now().year}-XX)",
                 options=number_options,
